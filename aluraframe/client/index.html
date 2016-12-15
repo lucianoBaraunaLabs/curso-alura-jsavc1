@@ -62,15 +62,16 @@
     <script src="js/app/models/Negociacao.js"></script>
     <script>
         
-        var n1 = new Negociacao(new Date(), 5, 700);
-        
-        console.log(n1.data);
+       let hoje = new Date();
+       let n1 = new Negociacao(hoje, 1, 100.00);
+       console.log(n1.data);
+       hoje.setDate(hoje.getDate() + 2);
+       console.log(n1.data);
 
-        n1.data.setDate(11);
-       
-        console.log(n1.data);
-
-        
+       for(var i = 0; i<3; i++){
+           console.log(n1.data);
+       }
+       console.log(i)
         
 
     </script>
