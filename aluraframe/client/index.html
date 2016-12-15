@@ -63,14 +63,15 @@
     <script>
         
         var n1 = new Negociacao(new Date(), 5, 700);
+        
+        console.log(n1.data);
 
+        n1.data.setDate(11);
+       
+        console.log(n1.data);
 
-
-        console.log(n1)
-        console.log("Valor da data " + n1.data);
-        console.log("Valor da quantidade " + n1.quantidade);
-        console.log("Valor do valor " + n1.valor);
-        console.log("Resultado do volume " + n1.volume);
+        
+        
 
     </script>
     
